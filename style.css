@@ -1,0 +1,645 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&family=Quintessential&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a:hover {color: #FF3F33;}
+
+body {
+  font-family: 'Montserat', sans-serif;
+  font-size: 15px;
+}
+
+.top-message {
+  font-family: 'Montserat', sans-serif;
+  background-color: #FF3F33;
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+  padding: 7px;
+  font-size: 11px;
+  letter-spacing: .2em;
+}
+
+span.sale {
+  font-weight: 400;
+}
+
+header {
+  font-family: 'Montserat', sans-serif;
+  color: #717171;
+}
+
+.main-header {
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto 10px auto;
+}
+
+.header-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 280px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  width: 30px;
+  height: 35px;
+  font-size: 11px;
+}
+
+.icon svg {
+  margin-bottom: 3px;
+}
+
+.icon span {margin-top: auto;}
+
+header form {
+  display: flex;
+  width: 500px;
+  border: 1px solid #E5E5E5;
+  border-radius: 4px;
+}
+
+form #search {
+  width: 500px;
+  padding: 5px 10px;
+}
+
+form #search,
+form button {
+  border: none;
+  outline: none;
+  background-color: #F6F7F9;
+}
+
+nav a {
+  text-decoration: none;
+  color: #717171;
+}
+
+.mini-nav-container {border-bottom: 1.3px solid #E5E5E5;}
+
+.mini-nav {
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  margin: 0 auto 10px auto;
+}
+
+.mini-nav ul {
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+}
+
+.mini-nav li {list-style: none;}
+
+span.phone {font-weight: 700;}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 700;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.main-nav ul {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 15px 30px 15px 0;
+}
+
+.main-nav li {
+  list-style: none;
+}
+
+.main-nav button {
+  background-color: #FF3F33;
+  color: #fff;
+  border: none;
+  padding: 0 50px;
+}
+
+/******************************************
+                MAIN
+*******************************************/
+
+main {
+  color: #1A1A1A;
+  background-color: #F6F7F9;
+}
+
+p {
+  line-height: 32px;
+  text-align: center;
+}
+
+.header {
+  font-family: 'Quintessential', cursive;
+}
+
+.hero-container {
+  background-image: url(images/hero-image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
+  position: relative;
+  margin: 0;
+}
+
+.intro-container {
+  width: 500px;
+  text-align: center;
+  position: absolute;
+  top: 150px;
+  left: 100px;
+}
+
+.intro-container p {
+  margin-top: 50px;
+}
+
+.main-content div.card {
+  margin: 90px auto;
+  width: 800px;
+  height: 500px;
+}
+
+.main-content div img {width: 100%;}
+
+/* Grid Card */
+
+.grid-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 6fr 3fr;
+  width: 600px;
+  margin: 90px auto 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 140px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.header h2 {
+  width: 80px;
+  font-size: 30px;
+}
+
+.grid-card .left-side {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  padding: 0 20px;
+  width: 300px;
+  height: 390px;
+}
+
+.grid-card .right-side {
+  grid-column: 2 /3;
+  grid-row: 1 / 2;
+}
+
+.grid-card .cta {
+  text-align: center;
+  padding: 30px;
+  padding-bottom: 0;
+  grid-column: 1 / 3;
+}
+
+.cta p {margin-bottom: 10px;}
+
+.cta.two {padding-top: 15px;}
+
+.main-content a {
+  color: #1A1A1A;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.main-content a:hover {color: #FF3F33;}
+
+/* Flex Card */
+
+.flex-card {
+  width: 600px;
+  margin: 90px auto 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-card .left-side {
+  width: 300px;
+}
+
+.flex-card .left-side img {height: 100%;}
+
+.flex-card .right-side {
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.flex-card .header {
+  display: block;
+  height: 20px;
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+.flex-card p {margin-bottom: 10px;}
+
+/* Mothers' Day Card */
+
+.mothersday-card {
+  width: 900px;
+  display: flex;
+  margin: 90px auto 0 auto;
+}
+
+.mothersday-card .left-side {
+  width: 450px;
+}
+
+.mothersday-card .left-side img {height: 100%;}
+
+.mothersday-card .right-side {
+  width: 450px;
+  text-align: center;
+  background-color: #fff;
+  padding-top: 60px;
+}
+
+.mothersday-card .header {
+  display: block;
+  height: 30px;
+  margin-top: 3px;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+/* Recipes */
+
+.recipes {
+  width: 900px;
+  margin: 90px auto;
+}
+
+.description {
+  text-align: center;
+}
+
+.description div {
+  width: 750px;
+  margin: 0 auto;
+}
+
+.description h2 {
+  font-family: 'Quintessential', cursive;
+  font-size: 30px;
+}
+
+.description p {margin: 20px 0;}
+
+.recipe-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recipe-cards div.card {
+  width: 200px;
+  height: 300px;
+  text-align: center;
+  margin: 35px 0 90px 0;
+}
+
+.recipe-cards div.card div:last-child {
+  padding: 20px;
+}
+
+.recipe-cards div.card a {
+  line-height: 25px;
+}
+
+.card img {width: 100%;}
+
+/* Shop Section */
+
+.shop {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 90px;
+}
+
+.shop .shop-container {
+  margin: 20px auto;
+  display: flex;
+}
+
+.shop .left-side {
+  width: 65%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.left-side h2 {
+  font-family: 'Quintessential', cursive;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.shop .right-side {
+  width: 35%;
+}
+
+.right-side .offers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  row-gap: 35px;
+  width: 220px;
+  padding-left: 130px;
+}
+
+.shop .offer {
+  text-align: center;
+}
+
+.shop .logo-container {
+  width: 100px;
+  height: 100px;
+  background-color: #E5E5E5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.shop .logo-container svg {
+  width: 60%;
+}
+
+/* Join */
+
+.join {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-join {
+  display: flex;
+  width: 1000px;
+  box-shadow: 0px 2px 4px rgba(46, 62, 72, 0.12);
+  margin: 90px 0;
+  height: 550px;
+}
+
+.main-join .ad {
+  width: 40%;
+  margin: 0;
+  background-image: url(images/join.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #E3E7EB;
+}
+
+.main-join .form {
+  width: 60%;
+  background-color: #fff;
+  color: #444444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form form label,
+.birthday-label {
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.form form label {margin-bottom: 5px;}
+
+.birthday-label {
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.form form input {
+  height: 35px;
+  border: 1px solid #E5E5E5;
+  border-radius: 4px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  width: 400px;
+}
+
+.form form input.short {
+  width: 80px;
+}
+
+input.short[name="year"] {
+  width: 100px;
+}
+
+.form form label,
+.form form .long {
+  display: block;
+}
+
+.birthdate-section {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.terms-condition {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 11px;
+  margin: 20px auto;
+  width: 300px;
+}
+
+.form form input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  background-color: #FF3F33;
+  color: #fff;
+}
+
+/* Sign Up */
+
+.sign-up {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.sign-up .icon {
+  margin: 0 auto;
+}
+
+.sign-up h2 {margin: 10px 0;}
+
+.sign-up .cta {
+  color: #717171;
+  margin-bottom: 20px;
+}
+
+.sign-up form.input {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #E5E5E5;
+  border-radius: 4px;
+  margin: 0 auto;
+  width: 631px;
+}
+
+.sign-up input {
+  border: none;
+  height: 40px;
+  width: 500px;
+  padding: 15px;
+}
+
+.sign-up button {
+  padding: 5px 25px;
+  background-color: #FF3F33;
+  color: #fff;
+}
+
+.sign-up .subscribe {
+  font-size: 11px;
+  color: #717171;
+  margin: 15px;
+}
+
+/* Footer */
+
+/* Socials */
+
+.socials {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border-bottom: 1.3px solid #E5E5E5;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+}
+
+.social-icons .icon {
+  width: 100px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main Footer */
+
+.main-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.footer-contents {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-contents h5 {
+  margin-bottom: 10px;
+}
+
+.footer-contents ul {padding: 0;}
+
+.footer-contents li {
+  list-style: none;
+}
+
+.footer-contents li a {
+  color: #717171;
+  text-decoration: none;
+  line-height: 28px;
+}
+
+.footer-contents li a:hover {
+  text-decoration: underline;
+}
+
+.payment-methods h5 {margin-bottom: 30px;}
+
+.payment-methods .icons {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  column-gap: 20px;
+}
+
+.payment-methods .icons div {height: 70px;}
+
+/* Atrributions */
+
+.attributions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  background-color: #F6F7F9;
+  color: #717171;
+  font-size: 11px;
+}
+
+.attributions .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.attributions .content svg {margin-bottom: 15px;}
